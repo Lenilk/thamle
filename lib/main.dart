@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './Page/Page.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,15 +23,21 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> {
   int _selectedIndex = 1;
+  List titleList = ["Google Map", "Home", "Contact"];
+  String title = "Home";
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      title = titleList[index];
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child:Text("$title")),
+      ),
       body: Stack(
         children: [
           Offstage(
@@ -39,7 +46,7 @@ class _MainAppState extends State<MainApp> {
           ),
           Offstage(
             offstage: _selectedIndex != 1,
-            child: const HomePage(),
+            child:  HomePage(),
           ),
           Offstage(
             offstage: _selectedIndex != 2,
@@ -63,7 +70,7 @@ class _MainAppState extends State<MainApp> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor:Colors.blue,
+        selectedItemColor: Colors.blue,
         onTap: _onItemTapped,
       ),
     );

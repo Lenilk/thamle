@@ -1,5 +1,5 @@
 name: thamle
-description: A new Flutter project.
+description: Flutter project.
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.12.0
   google_maps_flutter: ^2.2.5
 
 dev_dependencies:
@@ -17,4 +18,10 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  assets:
+    - lib/Picture/
   uses-material-design: true
+
+flutter_icons:
+  image_path: "lib/Picture/logo.png"
+  android: true
