@@ -3,7 +3,7 @@ import './Page/HomePage.page.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
-  final PageController controller = PageController();
+  final PageController controller = PageController(keepPage: false);
   @override
   Widget build(BuildContext context) {
     return PageView(
