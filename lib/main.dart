@@ -8,8 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MainApp(),
+    return MaterialApp(
+      initialRoute: "/",
+      routes: {"/": (context) => MainApp(), "/gallery":(context)=> GallelyPage()},
     );
   }
 }
@@ -31,29 +32,18 @@ class _MainAppState extends State<MainApp> {
       title = titleList[index];
     });
   }
-
+  static  List<Widget> _widgetOptions = <Widget>[
+    MapPage(),
+    HomePage(),
+    ContactPage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child:Text("$title")),
+        title: Center(child: Text("$title")),
       ),
-      body: Stack(
-        children: [
-          Offstage(
-            offstage: _selectedIndex != 0,
-            child: const MapPage(),
-          ),
-          Offstage(
-            offstage: _selectedIndex != 1,
-            child:  HomePage(),
-          ),
-          Offstage(
-            offstage: _selectedIndex != 2,
-            child: const ContactPage(),
-          )
-        ],
-      ),
+      body:_widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
