@@ -21,7 +21,7 @@ class _MyWidgetState extends State<GallelyPage> {
               flex: 4,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.5,
+                height: MediaQuery.of(context).size.height * 0.8,
                 decoration: BoxDecoration(
                     image: DecorationImage(image: AssetImage(image))),
               ),
