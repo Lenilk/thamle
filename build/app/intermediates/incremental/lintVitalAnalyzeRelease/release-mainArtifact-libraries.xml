@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:C:\myfluttter\mynewapp\thamle-main\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
-      jars="C:\myfluttter\mynewapp\thamle-main\build\app\intermediates\flutter\release\libs.jar"
-      resolved="__local_aars__:C:\myfluttter\mynewapp\thamle-main\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
+      name="__local_aars__:C:\myfluttter\mynewapp\thamle\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
+      jars="C:\myfluttter\mynewapp\thamle\build\app\intermediates\flutter\release\libs.jar"
+      resolved="__local_aars__:C:\myfluttter\mynewapp\thamle\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
-      name="C:\myfluttter\mynewapp\thamle-main\android@@:flutter_plugin_android_lifecycle::release"
-      jars="C:\myfluttter\mynewapp\thamle-main\build\flutter_plugin_android_lifecycle\.transforms\96997200bfb14bb96aa237dc2bb7784d\transformed\out\jars\classes.jar"
+      name="C:\myfluttter\mynewapp\thamle\android@@:flutter_plugin_android_lifecycle::release"
+      jars="C:\myfluttter\mynewapp\thamle\build\flutter_plugin_android_lifecycle\.transforms\2ef38bbe17325af0f1070baf191279c7\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle:unspecified"
-      folder="C:\myfluttter\mynewapp\thamle-main\build\flutter_plugin_android_lifecycle\.transforms\96997200bfb14bb96aa237dc2bb7784d\transformed\out"
+      folder="C:\myfluttter\mynewapp\thamle\build\flutter_plugin_android_lifecycle\.transforms\2ef38bbe17325af0f1070baf191279c7\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\myfluttter\mynewapp\thamle-main\android@@:google_maps_flutter_android::release"
-      jars="C:\myfluttter\mynewapp\thamle-main\build\google_maps_flutter_android\.transforms\22ed12f89397988e723982a191691182\transformed\out\jars\classes.jar"
+      name="C:\myfluttter\mynewapp\thamle\android@@:google_maps_flutter_android::release"
+      jars="C:\myfluttter\mynewapp\thamle\build\google_maps_flutter_android\.transforms\160846dfe184301793967a8b92b68583\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.googlemaps:google_maps_flutter_android:unspecified"
-      folder="C:\myfluttter\mynewapp\thamle-main\build\google_maps_flutter_android\.transforms\22ed12f89397988e723982a191691182\transformed\out"
+      folder="C:\myfluttter\mynewapp\thamle\build\google_maps_flutter_android\.transforms\160846dfe184301793967a8b92b68583\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

@@ -17,24 +17,25 @@ class _MyWidgetState extends State<GallelyPage> {
         ),
         body: Column(
           children: [
-            Center(
+            Expanded(
+              flex: 4,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.6,
+                height: MediaQuery.of(context).size.height * 0.5,
                 decoration: BoxDecoration(
                     image: DecorationImage(image: AssetImage(image))),
               ),
             ),
-            Container(
-              height: MediaQuery.of(context).size.height * 0.2,
+            Expanded(
+              flex: 1,
               child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
                   return (IconButton(
                       icon: Image(
                         image: AssetImage(
                             "lib/Page/GalleryPage/GalleryPicture/ดาวน์โหลด ($index).png"),
-                      ),
-                      iconSize: MediaQuery.of(context).size.height * 0.2,
+                     ),
+                     iconSize: MediaQuery.of(context).size.height*0.2,
                       onPressed: () {
                         setState(() {
                           image =
